@@ -1,0 +1,13 @@
+What
+    Use ResNet 50 + sigmoid lastlayer
+    Dataset Kaggle/CheXray14
+When
+    07/07/2019
+How
+    ResNet 50
+        Because dataset is aproximately 40GB so we need simple model
+        with simple training.
+Result
+    TLE with colab & Kaggle
+Comment
+    We need another dataset

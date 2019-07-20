@@ -1,0 +1,17 @@
+What
+    DenseNet121
+    Dataset www.kaggle.com/c/vietai-advance-course-retinal-disease-detection
+When 
+    00h15
+    20/07/2019
+Why 
+    For deadline PPNCKH 
+How
+    Use DenseNet121 + pretrained = True
+        better than resNet50 (in baseline model)
+Result
+    Acc = 0.85047 > 0.77 (Restnet50 baseline)
+Comment DEFEAT
+    In medicine image, DenseNet121 is better than resNet50 (baseline)
+    But this is a defeat because we don't have a strong model for comparing or are able to use their Dataset
+    We need another Dataset for another problems

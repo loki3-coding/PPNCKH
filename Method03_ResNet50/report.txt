@@ -1,0 +1,24 @@
+What 
+    ResNet 50 + sigmoid lastlayer + no freeze
+    Dataset www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+When 
+    21h30
+    20/09/2019
+Why
+    Comparing with the first method
+How
+    ResNet 50
+        use the same model
+    Add sigmoid at lastlayer
+        Because we just detect 1-pneumonia - 0-otherwise
+    LEARING_RATE = 0.001
+        same
+    LEARNING_RATE_SCHEDULE_FACTOR = 0.1 
+        same
+    LEARNING_RATE_SCHEDULE_PATIENCE = 5 
+        Just begining
+    Label 1 = 3 * Label 0
+        it's dataset
+Result 
+    Acc = 
+Comment
