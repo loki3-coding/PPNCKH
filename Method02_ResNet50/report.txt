@@ -22,7 +22,7 @@ How
     Label 1 = 3 * Label 0
         it's dataset
 Result 
-    Acc =  0.8942307692307693
+    Acc =  0.8942307692307693 (with thresh hold = 0.5)
     Time aproximate 2h
 Comment 
     Score's so low because we have lots of data but freeze model (except lastlayer)

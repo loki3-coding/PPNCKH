@@ -20,5 +20,5 @@ How
     Label 1 = 3 * Label 0
         it's dataset
 Result 
-    Acc = 
+    Acc =  (with thresh hold = 0.5)
 Comment
