@@ -25,7 +25,7 @@ Result
     Acc =  0.8942307692307693 (with thresh hold = 0.5)
     Time aproximate 2h
 Comment 
-    Score's so low because we have lots of data but freeze model (except lastlayer)
+    Score's lower than freeze all param.
     LEARNING_RATE's also low making loss variable reduce slowly
     Model is ResNet50. It's so fast for training (because there param used is smaller than another model 
     such as DenseNet or CheXNet). We will able to use it for trying config some params

@@ -1,0 +1,32 @@
+What
+    DenseNet121 + sigmoid + freeze
+    + overstampling
+    Dataset www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+When
+    10h42
+    21/09/2019
+Why
+    Update network
+    if we want to use anotherNet, just write one line 
+How
+    DenseNet121
+        and we can compare with ResNet50
+    Add sigmoid lastlayer
+        binary classification
+    freeze
+        because freeze give better score (method03 vs method02)
+    LEARING_RATE = 0.001
+        same
+    LEARNING_RATE_SCHEDULE_FACTOR = 0.1 
+        same
+    LEARNING_RATE_SCHEDULE_PATIENCE = 5 
+        same
+    Label 1 = Label 0
+        use overstampling
+    maxepoch * batch_size = train_dataset.imgs.count()
+        Reduce time for training
+Result
+
+Comment
+
+    

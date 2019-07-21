@@ -5,7 +5,7 @@ When
     21h30
     20/09/2019
 Why
-    Comparing with the first method
+    Comparing method
 How
     ResNet 50
         use the same model
@@ -20,7 +20,10 @@ How
     Label 1 = 3 * Label 0
         it's dataset
 Result 
-    Acc =  (with thresh hold = 0.5)
+    Acc = 0.8105  (with thresh hold = 0.5)
 Comment
-
-    * maxepoch = 100 -> training dataset * 2 time
+    The figue illustriates that loss_variable is very small. It's hard to reduce it while 
+    Acc could be better.
+    We need another optimaze and loss, and training in the new way.
+    maxepoch = 100 -> training dataset * 2. 
+    We need reduce the time for training (2h at this time)
