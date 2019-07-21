@@ -22,3 +22,5 @@ How
 Result 
     Acc =  (with thresh hold = 0.5)
 Comment
+
+    * maxepoch = 100 -> training dataset * 2 time

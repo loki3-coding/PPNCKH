@@ -1,0 +1,37 @@
+What
+    ResNet50 + sigmoid + no freeze
+    + overstampling
+    Dataset www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+When
+    7h42
+    21/09/2019
+Why
+    ResNet50 is simple for training
+    if we want to use anotherNet, just write one line 
+How
+    ResNet50
+        same
+    Add sigmoid lastlayer
+        binary classification
+     LEARING_RATE = 0.001
+        same
+    LEARNING_RATE_SCHEDULE_FACTOR = 0.1 
+        same
+    LEARNING_RATE_SCHEDULE_PATIENCE = 5 
+        Just begining
+    Label 1 = Label 0
+        use overstampling
+Result
+    Acc = 0.7353479853479854 (with threshold = 0.5)
+    Acc = 0.7765567765567766 (with threshold = 0.75)
+    Acc = 0.826007326007326 (with threshold =  0.95)
+    Acc = 0.6428571428571429 (with threshold = 1, 2, 3) ???? 
+Comment
+    :( it's my mistake
+    Just training dataset is imbalance, but I write overstampling (
+    label0 * 3) running in DataFudusdataset => validation dataset and 
+    test dataset is change (which valid_dataset is balance so after changing, 
+    valid score nerver go down in figue)
+    So, acc is higher when threshold come to 1.
+
+    * maxepoch = 100 -> training dataset * 2 time
