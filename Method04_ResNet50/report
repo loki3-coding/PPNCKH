@@ -22,10 +22,11 @@ How
     Label 1 = Label 0
         use overstampling
 Result
-    Acc = 0.7353479853479854 (with threshold = 0.5)
-    Acc = 0.7765567765567766 (with threshold = 0.75)
-    Acc = 0.826007326007326 (with threshold =  0.95)
-    Acc = 0.6428571428571429 (with threshold = 1, 2, 3) ???? 
+    Train1:
+        Acc = 0.7353479853479854 (with threshold = 0.5)
+        Acc = 0.7765567765567766 (with threshold = 0.75)
+        Acc = 0.826007326007326 (with threshold =  0.95)
+        Acc = 0.6428571428571429 (with threshold = 1, 2, 3) ???? 
 Comment
     :( it's my mistake
     Just training dataset is imbalance, but I write overstampling (

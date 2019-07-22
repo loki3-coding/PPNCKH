@@ -5,7 +5,7 @@ When
     21h30
     20/09/2019
 Why
-    Comparing method
+    Comparing with freezing all params method02
 How
     ResNet 50
         use the same model
@@ -20,7 +20,10 @@ How
     Label 1 = 3 * Label 0
         it's dataset
 Result 
-    Acc = 0.8105  (with thresh hold = 0.5)
+    Train1
+        Acc = 0.8105  (with thresh hold = 0.5)
+    Train2:
+        Acc = 0.7548076923076923 (threshold = 0.7)
 Comment
     The figue illustriates that loss_variable is very small. It's hard to reduce it while 
     Acc could be better.

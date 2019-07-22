@@ -3,12 +3,14 @@ What
     + overstampling
     Dataset www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 When
-    10h42
+    19h42
     21/09/2019
 Why
     Update network
     if we want to use anotherNet, just write one line 
 How
+    overstampling
+        dataset is imbalance in train_dataset
     DenseNet121
         and we can compare with ResNet50
     Add sigmoid lastlayer
@@ -16,17 +18,16 @@ How
     freeze
         because freeze give better score (method03 vs method02)
     LEARING_RATE = 0.001
-        same
-    LEARNING_RATE_SCHEDULE_FACTOR = 0.1 
-        same
-    LEARNING_RATE_SCHEDULE_PATIENCE = 5 
-        same
-    Label 1 = Label 0
-        use overstampling
-    maxepoch * batch_size = train_dataset.imgs.count()
-        Reduce time for training
-Result
 
+    LEARNING_RATE_SCHEDULE_FACTOR = 0.1 
+
+    LEARNING_RATE_SCHEDULE_PATIENCE = 5 
+
+Result
+    Train 1: Acc = 0.9022435897435898 (threshold = 0.95)
+    Train 2: Acc = 0.8830128205128205 (threshold = 0.95)
 Comment
+    It's wrong when I test with DenseNet121. It very slow :(((((
+    Apromximate ResNet50 with freeze (but this model has more layer - 121 vs 50)
 
     
