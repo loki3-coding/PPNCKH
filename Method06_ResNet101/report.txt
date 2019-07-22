@@ -1,0 +1,18 @@
+What
+    ResNet 101 + freeze + overstampling
+When
+    7h00
+    22/07/2019
+How
+    ResNet101
+        ResNet50 has good score
+    freeze params
+        freeze params get better score than unfreeze 
+        Because dataset is not large
+    overstampling
+        label0 * 3 = label1
+Why
+
+Result
+
+Comment
