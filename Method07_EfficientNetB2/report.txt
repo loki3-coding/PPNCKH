@@ -1,5 +1,5 @@
 What 
-    EfficientNet B0 + NoFreeze + BCEWithLogitsLoss 
+    EfficientNet B2 + NoFreeze + BCEWithLogitsLoss 
 When
     20h58
     22/07/2019
@@ -9,7 +9,7 @@ Why
     LossFunc
     Better Model
 How
-    EfficientNet B0 
+    EfficientNet B2
         This's the best.
         cannot use B1,2,3,... because of 'CUDA out of memory'
     NoFreeze

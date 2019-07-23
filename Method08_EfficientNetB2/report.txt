@@ -1,5 +1,5 @@
 What
-    efficientNet B0 + overstampling + BCEWithLogitLoss + no freeze
+    efficientNet B2 + overstampling + BCEWithLogitLoss + no freeze
     Kaggle deny me =((((
 When
     23h00
@@ -15,9 +15,9 @@ Result
     Train1:
         Acc = 0.865384615
     Train2:
-        Acc = 0.924679487
+        Acc = 0.9310897435897436 (Set threshold = 5.35)
 Comment
     Train1:
         Disapointed =(((
     Train2:
-    
+        Disapointed =((( I need 0.95
