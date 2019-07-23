@@ -1,0 +1,19 @@
+What
+    efficientNet B0 + overstampling + BCEWithLogitLoss + no freeze
+    Kaggle deny me =((((
+When
+    23h00
+    22/07/2019
+Why
+    I want to improve accuracy with overstampling + BCEWithLogitLoss
+    Because dataset with overstampling is >= 12 000 image so I think that nofreeze is better.
+How 
+    BCEWithLogitLoss
+        This version is more numerically stable than using a plain Sigmoid followed by a BCELoss.
+        Can solve imbalance problem and give better LossFunc
+Result
+    Train1:
+        Acc = 0.865384615
+Comment
+    Disapointed =(((
+    But wait, why training stop after 1/5 dataset ??? I need to train again

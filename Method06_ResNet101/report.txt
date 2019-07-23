@@ -11,8 +11,11 @@ How
         Because dataset is not large
     overstampling
         label0 * 3 = label1
-Why
-
+    Count params = 42 502 209
 Result
-
+    Acc = 0.9262820512820513 (threshold = 0.5 perfect)
 Comment
+    the figue illustrates that score is so perfect => can't learning anything after 1/4 dataset.
+    We need a better loss function and optimize.
+    Time for training is 5h < 8h - deadline of Kaggle, but it give an attention.
+    The next Net is EfficientNet - Best ConvNet in this time.

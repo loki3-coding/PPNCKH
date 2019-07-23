@@ -1,0 +1,24 @@
+What 
+    EfficientNet B0 + NoFreeze + BCEWithLogitsLoss 
+When
+    20h58
+    22/07/2019
+Why
+    After Method06, more problem appear:
+    Time for training
+    LossFunc
+    Better Model
+How
+    EfficientNet B0 
+        This's the best.
+        cannot use B1,2,3,... because of 'CUDA out of memory'
+    NoFreeze
+        Just Trying
+    BCEWithLogitsLoss
+        Not only reduce dataset - time for training 
+        But also solve problem which dataset is very imbalance.
+        Set pos_w = 0.346 because neigative / positive = 0.346
+Result
+    Acc = 0.9278846153846154
+Comment
+
