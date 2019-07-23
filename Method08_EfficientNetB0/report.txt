@@ -15,10 +15,9 @@ Result
     Train1:
         Acc = 0.865384615
     Train2:
-
+        Acc = 0.924679487
 Comment
     Train1:
         Disapointed =(((
-        But wait, why does training stop after 1/5 dataset ??? 
-        I need to train again
     Train2:
+    
