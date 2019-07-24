@@ -1,2 +1,2 @@
 ResNet 50 + transfer learning + freeze + BCEWithLogitLoss
-Acc = 
+BugCode 

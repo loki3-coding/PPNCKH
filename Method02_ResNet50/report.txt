@@ -1,5 +1,5 @@
 What
-    Use ResNet 50 + sigmoid lastlayer + freeze model
+    Use ResNet 50 + sigmoid lastlayer + transfer learning +  freeze model
     Dataset www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 When
     17h00

@@ -1,0 +1,4 @@
+ResNet50 + SGD
+=> baseline 
+Acc = 0.7708333333333334 (thresh 0.5)
+The Best Acc = 0.8669871794871795 (thresh = 0.8)
