@@ -1,0 +1,11 @@
+Good
+    - Run models successfully 
+        => disgress when using more models
+    - Improve score by using methods
+    - Compare methods
+Bad 
+    - Do not read exam carefully
+        => Use more models in methods
+    - Do not have enough time
+        => Finish this project in 5 days with 11 method (Just 5 methods use the right models)
+    - Score is quite behind another models
