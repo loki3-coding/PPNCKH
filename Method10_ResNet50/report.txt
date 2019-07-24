@@ -1,0 +1,6 @@
+What
+    ResNet50 + just it
+Result
+    Acc = 0.8814102564102564 (threshold = 0.5)
+
+I do not have enough time for writing
