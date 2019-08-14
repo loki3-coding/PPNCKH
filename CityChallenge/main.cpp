@@ -15,7 +15,7 @@ int main(){
         string pathREFile = RE_FOLDER + '/' + filename; // destination file name
         // calcIoU   
         normalizeFileGT(pathGTFile);
-        Metric example(pathGTFile, pathGTFile);
+        Metric example(pathGTFile, pathPDFile);
         // write
         ofstream fo(pathREFile);
         fo << "Average IoU = " << example.getIoUAllFrames() << endl;
