@@ -1,0 +1,4 @@
+resultLoc1_6.txt
+resultLoc2_8.txt
+resultLoc3_4.txt
+resultLoc4_5.txt

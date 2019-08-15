@@ -22,4 +22,6 @@ float getIoU(int *listA, int *listB);
 // normalize file groundTruth
 void normalizeFileGT(const string &path);
 
+void normalizeFilePD(const string &path);
+
 #endif

@@ -140,7 +140,7 @@ void normalizeFileGT(const string &path){
     // normalize
     int lenNewList = 0;
     for (int i = 0; i < lenFile; i++){
-        if (list[i][0] % SKIP_FRAME == 0){
+        if (list[i][0] % SKIP_FRAME == 1){
             newList[lenNewList][0] = list[i][0];
             for (int j = 1; j < MAX_CLASS; j++)
                 newList[lenNewList][j] = list[i][j]; 
@@ -160,3 +160,46 @@ void normalizeFileGT(const string &path){
         delete []newList[i];
     delete []newList;
 }
+
+void normalizeFilePD(const string &path){
+    /*
+    use: normalize Data in Prediction file, esier for solving in another problems. 
+        We just input Data of video including [[frame, xmin, ymin, xmax, ymax],...],
+        mantain frame which mod SKIP_FRAME = 0. After all, rewrite Prediction file.
+    input:  
+        path    -   string
+            path to Prediction file.
+        SKIP_FRAME  -   int
+            get 1 checkPoint of (1 frame) / (SKIP_FRAME frame), usually frame at 
+            k*SKIP_FRAME. This defines in config.h
+    output: nothing.
+    */
+    // Get list from file
+    int lenFile = countLinesFile(path);
+    int **list = getInputFile(path, lenFile);
+    // create newList which use instead for list lately
+    int **newList = new int*[lenFile];
+    for (int i = 0; i < lenFile; i++)
+        newList[i] = new int[MAX_CLASS];
+    // normalize
+    int lenNewList = 0;
+    for (int i = 0; i < lenFile; i++){
+            newList[lenNewList][0] = (list[i][0]-1)*30 + 1;
+            for (int j = 1; j < MAX_CLASS; j++)
+                newList[lenNewList][j] = list[i][j]; 
+            lenNewList++;
+    }
+    // save new file Groundtruth
+    ofstream fo(path);
+    for (int i = 0; i < lenNewList; i++){
+        for (int j = 0; j < MAX_CLASS; j++)
+            fo << newList[i][j] << " ";
+        fo << endl;
+    }
+    fo.close();
+    // delete pointer
+    for (int i = 0; i < lenFile; i++)
+        delete []newList[i];
+    delete []newList;
+}
+

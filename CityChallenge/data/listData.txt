@@ -1,1 +1,8 @@
+Loc1_1.txt
+Loc1_3.txt
+Loc2_2.txt
+Loc2_4.txt
+Loc3_1.txt
+Loc3_2.txt
+Loc4_2.txt
 Loc4_3.txt
