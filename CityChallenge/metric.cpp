@@ -104,20 +104,20 @@ Metric::~Metric(){
 
 // average IoU of one frame
 float Metric::getIoUOneFrame(const int &frame){
-    int posBegin = this->checkPointPD[frame/SKIP_FRAME];
-    int posEnd = this->checkPointPD[frame/SKIP_FRAME + 1];
+    int posBegin = this->checkPointGT[frame/SKIP_FRAME];
+    int posEnd = this->checkPointGT[frame/SKIP_FRAME + 1];
     float sumIoU = 0;
     for (int i = posBegin; i < posEnd; i++)
-        sumIoU += this->IoU[i];
+        sumIoU += int(this->IoU[i]>=THRESHOLD);
     return sumIoU/(posEnd-posBegin);
 }
 
 // average IoU all video
 float Metric::getIoUAllFrames(){
     int posBegin = 0;
-    int posEnd = this->checkPointPD[this->lenCheckPPD-1];
+    int posEnd = this->checkPointGT[this->lenCheckPPD-1];
     float sumIoU = 0;
     for (int i = posBegin; i < posEnd; i++)
-        sumIoU += this->IoU[i];
+        sumIoU += int(this->IoU[i]>=THRESHOLD);
     return sumIoU/(posEnd-posBegin);
 }

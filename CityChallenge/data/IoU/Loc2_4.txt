@@ -1,1 +1,1 @@
-Average IoU = 0.529499
+Average IoU = 0.486043

@@ -6,9 +6,10 @@
 
 using namespace std;
 
-#define MAX_LEN 100000
-#define MAX_CLASS 5
-#define SKIP_FRAME 30
+#define MAX_LEN 100000  // max len use for pointer
+#define MAX_CLASS 5 // len of classList 
+#define SKIP_FRAME 30   //  mantain 1 img / SKIP_FRAME img
+#define THRESHOLD 0.7   // IoU >= THRESHOLD  ->  object
 
 const string GT_FOLDER = "./data/groundtruth";    // groundtruth  path
 const string PD_FOLDER = "./data/predict";    // prediction folder path

@@ -18,8 +18,8 @@ int main(){
         string pathREFile = RE_FOLDER + '/' + filename; // destination file name
         
         // If file has not been normalized, use below. If no, delete it
-        normalizeFileGT(pathGTFile);
-        normalizeFilePD(pathPDFile);
+        // normalizeFileGT(pathGTFile);
+        // normalizeFilePD(pathPDFile);
         
         // calcIoU  
         Metric *example = new Metric(pathGTFile, pathPDFile);
@@ -33,11 +33,11 @@ int main(){
 
     // If testResult has not been normalized, use below. If no, delete it.
     // Normalize testResult data
-    ifstream fi(TESTNAME_PATH);
-    while (getline(fi, filename)) {
-        string pathTestName = TEST_FOLDER + '/' + filename;
-        normalizeFilePD(pathTestName);
-    }
-    fi.close();
-    return 0;
+    // ifstream fi(TESTNAME_PATH);
+    // while (getline(fi, filename)) {
+    //     string pathTestName = TEST_FOLDER + '/' + filename;
+    //     normalizeFilePD(pathTestName);
+    // }
+    // fi.close();
+    // return 0;
 }
