@@ -14,3 +14,8 @@ It contains C/Cpp sources, dataset and result file. You have to read comment in 
   + test  - containt test files // after normalize :D 
   + listData.txt  - contains filenames in Groundtruth, IoU & Precdiction.
   + listTest.txt  - contains filenames in test folder.
+How to use? 
+  + insert file Loc1_1.txt(groundtruth file) + Loc1_1.txt (predict file) -> data/groundtruth + data/predict folder.
+  + insert 'Loc1_1.txt' into listData.txt.
+  + use terminal, cd /CityChallenge && ./all.
+  + Get result data/IoU/Loc1_1.txt.
